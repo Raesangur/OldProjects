@@ -1,0 +1,4 @@
+﻿  ConsoleApplication2.cpp
+C:\Users\Pascal5333\source\repos\ConsoleApplication2\ConsoleApplication2.cpp(6,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Pascal5333\source\repos\ConsoleApplication2\ConsoleApplication2.cpp(8,11): warning C4101: 'aOldColors': unreferenced local variable
+  ConsoleApplication2.vcxproj -> C:\Users\Pascal5333\source\repos\ConsoleApplication2\Debug\ConsoleApplication2.exe
