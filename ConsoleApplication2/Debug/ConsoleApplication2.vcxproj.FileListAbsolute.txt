@@ -1,2 +1,2 @@
-C:\Users\Pascal5333\source\repos\ConsoleApplication2\Debug\ConsoleApplication2.exe
-C:\Users\Pascal5333\source\repos\ConsoleApplication2\Debug\ConsoleApplication2.pdb
+E:\Pascal5333\Documents\source\repos\ConsoleApplication2\Debug\ConsoleApplication2.exe
+E:\Pascal5333\Documents\source\repos\ConsoleApplication2\Debug\ConsoleApplication2.pdb

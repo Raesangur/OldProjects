@@ -1,16 +1,41 @@
-#include <windows.h>
-#include <stdio.h>
-#pragma comment(lib, "user32.lib")
+#include <cmath>
+#include <iostream>
+#include "vector3.h"
 
-void main()
+template <typename vector>
+vector orthogonalProjection(const vector& u, const vector& v)
 {
-    int aElements[2] ={COLOR_WINDOW,COLOR_ACTIVECAPTION};
-    DWORD aOldColors[2];
-    DWORD aNewColors[2];
+    double projection = u * v;
+    double length = v.length() * v.length();
 
-    // Define new colors for the elements
-    aNewColors[0] = RGB(0xFF, 0xFF, 0xFF);  // light gray 
-    aNewColors[1] = RGB(0x80,0x00,0x80);  // dark purple
+    return v * (projection / length);
+}
 
-    SetSysColors(2,aElements,aNewColors);
+vector3 matrixProduct(const vector3& u, const vector3& v)
+{
+    double a = u.b * v.c - v.b * u.c;
+    double b = -(u.a * v.c - v.a * u.c);
+    double c = u.a * v.b - v.a * u.b;
+
+    return vector3(a, b, c);
+}
+
+template <typename vector>
+double angle(const vector& u, const vector& v)
+{
+    double projection = u * v;
+    double length = u.length() * v.length();
+
+    return std::acos(projection / length) * (180/3.14159265358979323846264338327) ;
+}
+
+int main()
+{
+    vector3 u = { 1, 0, 0 };
+    vector3 v = { 1, 0, 0 };
+
+    vector3 uv = matrixProduct(u, v);
+    uv.print();
+
+    std::cin.get();
 }

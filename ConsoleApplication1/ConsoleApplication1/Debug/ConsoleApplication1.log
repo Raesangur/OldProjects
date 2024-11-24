@@ -1,0 +1,5 @@
+﻿  ConsoleApplication1.cpp
+c:\users\pascal5333\source\repos\consoleapplication1\consoleapplication1\consoleapplication1.cpp(195): warning C4267: 'initializing': conversion from 'size_t' to 'uint16_t', possible loss of data
+c:\users\pascal5333\source\repos\consoleapplication1\consoleapplication1\consoleapplication1.cpp(198): warning C4244: 'argument': conversion from 'uint16_t' to 'uint8_t', possible loss of data
+c:\users\pascal5333\source\repos\consoleapplication1\consoleapplication1\consoleapplication1.cpp(198): warning C4267: 'argument': conversion from 'size_t' to 'uint8_t', possible loss of data
+  ConsoleApplication1.vcxproj -> C:\Users\Pascal5333\source\repos\ConsoleApplication1\Debug\ConsoleApplication1.exe
